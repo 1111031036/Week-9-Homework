@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LLM 研究知識庫與教學應用總目錄</title>
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --surface: #111827;
+      --surface-2: #1e293b;
+      --border: #263244;
+      --text: #f1f5f9;
+      --muted: #94a3b8;
+      --cyan: #38bdf8;
+      --amber: #f59e0b;
+      --emerald: #34d399;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Inter", "Noto Sans TC", -apple-system, sans-serif;
+      padding: 56px 24px;
+      display: flex;
+      justify-content: center;
+    }
+    .container {
+      max-width: 880px;
+      width: 100%;
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 24px;
+      margin-bottom: 36px;
+    }
+    .badge {
+      display: inline-block;
+      font-family: monospace;
+      font-size: 0.8rem;
+      color: var(--cyan);
+      background: rgba(56, 189, 248, 0.1);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      padding: 4px 10px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+    }
+    h1 { font-size: 2.2rem; margin: 0 0 10px; color: #ffffff; }
+    p { color: var(--muted); margin: 0; font-size: 1.05rem; }
+    .section-title {
+      font-size: 1.25rem;
+      color: var(--cyan);
+      margin: 32px 0 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .card:hover {
+      border-color: var(--cyan);
+      transform: translateY(-2px);
+    }
+    .card-info h3 { margin: 0 0 6px; font-size: 1.2rem; color: #fff; }
+    .card-info p { font-size: 0.92rem; margin: 0; color: var(--muted); }
+    .actions { display: flex; gap: 10px; }
+    .btn {
+      display: inline-block;
+      padding: 8px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.88rem;
+      white-space: nowrap;
+    }
+    .btn-web { background: rgba(56, 189, 248, 0.15); color: var(--cyan); border: 1px solid rgba(56, 189, 248, 0.3); }
+    .btn-web:hover { background: rgba(56, 189, 248, 0.25); }
+    .btn-slide { background: rgba(245, 158, 11, 0.15); color: var(--amber); border: 1px solid rgba(245, 158, 11, 0.3); }
+    .btn-slide:hover { background: rgba(245, 158, 11, 0.25); }
+    footer {
+      margin-top: 56px;
+      border-top: 1px solid var(--border);
+      padding-top: 20px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="badge">LLM WIKI APPLICATION LAYER</div>
+      <h1>讀書筆記與教學應用總目錄</h1>
+      <p>嚴格基於 Wiki 知識庫內容編譯之閱讀網頁與互動簡報導覽中心</p>
+    </header>
+
+    <div class="section-title">🎓 已發佈的課程單元</div>
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-info">
+          <h3>01：GPT-3 與上下文學習的範式轉移</h3>
+          <p>涵蓋 Zero/Few-Shot 範式、雙迴圈元學習、300B 語料配方與 SuperGLUE 實驗對比（附 4 篇待補文獻下載）</p>
+        </div>
+        <div class="actions">
+          <a class="btn btn-web" href="01-gpt3-few-shot-learners.html" target="_blank">🌐 閱讀網頁</a>
+          <a class="btn btn-slide" href="../slides/01-gpt3-few-shot-learners.html" target="_blank">📊 互動簡報</a>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      LLM Wiki Architecture • Strict Wiki-Only Grounding • 支援 KaTeX 數學公式與離線簡報
+    </footer>
+  </div>
+</body>
+</html>
